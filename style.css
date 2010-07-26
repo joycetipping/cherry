@@ -1,68 +1,35 @@
 /*  
-Theme Name: Apricot
+Theme Name: Cherry
 Theme URI: http://www.ardamis.com/2007/06/03/apricot/
 Description: A minimalist, text-based layout with support for widgets and avatars.  Apricot is tested and proven SEO friendly.  All pages validate as XHTML 1.0 Strict.
 Version: 1.2
-Author: Oliver Baty
+Author: Joyce Tipping
 Author URI: http://www.ardamis.com/
-Tags: fixed-width, left-sidebar, two-columns, black, orange, white, light
+Tags: fixed-width, left-sidebar, two-columns, black, red, white, light
 */
 
-/*** Body and Major Structural Elements ***/
+/*** Structural Layout ***/
 * {
-  margin: 0;
-  padding: 0;
-}
-body {
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  color: #202020;
-  font: 62.5% "Lucida Grande", Verdana, Arial, sans-serif; /* Resets 1em to 10px */
+  margin:0; padding:0;
 }
 #page {
-  margin: 0 auto 0;
+  margin: 0 auto;
   padding: 0;
   width: 800px;
 }
 #header {
-  margin: 40px 0 0;
-}
-#header p.blogtitle {
-  text-indent: 180px;
-  font: 3em Georgia, "Times New Roman", Times, serif;
-}
-#header p.description {
-  text-indent: 180px;
-  font-size: 1.4em;
-}
-#content {
+  margin: 40px 0 60px 0;
 }
 .narrowcolumn {
   width: 540px;
-  margin: 0;
-  padding: 0;
   float: right;
+  margin:0; padding:0;
 }
-.post {
+#sidebar {
+  width: 220px;
 }
-.multipost {
-/*padding: 0 0 80px;*/
-  padding: 60px 0 0 0;
-}
-.entry {
-  margin: 0;
-  padding: 0;
-  font: 1.3em/1.6 "Lucida Grande", Verdana, Arial, sans-serif;
-}
-.navigation {
-  padding: 10px 0 60px;
-  line-height: 1.5em;
-}
-img.centered {
-  margin: 0 auto 0;
-  display: block;
-}
+
+/*** General Tags ***/
 .aligncenter {
   display: block;
   margin-left: auto;
@@ -80,14 +47,6 @@ img.centered {
   float: right;
   display: inline;
 }
-#footer {
-  width: 800px;
-  margin: 0 auto 0;
-  padding: 20px 0 25px 9px;
-  clear: both;
-}
-
-/*** General Tags ***/
 .center {
   text-align: center;
 }
@@ -101,198 +60,173 @@ img.centered {
   display: none;
 }
 
-/*** Sidebar ***/
-#sidebar {
-  width: 220px;
-  padding: 60px 0 40px;
-  list-style-type: none;
-  text-align: right;
-}
-#sidebar a {
-  /* Layout only. Set link color and appearance in Links section. */
-  padding: 0.3em 0 0.3em 0.3em;
-}
-#sidebar h2 {
-  margin: 30px 0 10px;
-  padding: 2px 0 2px 50px;
-  border-bottom: 1px solid #cacaca;
-  font: 1.2em "Lucida Grande", Verdana, Arial, sans-serif;
-  text-align: right;
-  text-transform: uppercase;
-}
-#sidebar li {
-  margin: 0 0 15px 0;
-  /* each main section, i.e., Pages, Categories, Archives, etc. */
-}
-#sidebar ol li {
-  list-style: decimal outside;
-}
-#sidebar p, #sidebar select {
-  margin: 5px 0 8px;
-}
-#sidebar ul, #sidebar ol {
-  margin: 8px 0 0 0;
-/*text-transform: uppercase;*/
-/*letter-spacing: 0.3em;*/
-  /* the block of links for all the Pages, Categories, Monthly Archives, etc. */
-}
-#sidebar ul li, #sidebar ol li {
-  margin: 3px 0; 
-  padding: 0.2em 0;
-  list-style-type: none;
-  font-size: 1.2em;
-  /* each individual link, i.e., each page, each category, each month, etc. */
-}
-#sidebar ul li:hover {
-  /* border-left: 1px solid #ff0000; */
-}
-#sidebar ul ul, #sidebar ol {
-  margin: 0 0 0 10px;
-}
-#sidebar form {
-  margin: 0;
-}
-#searchform {
-  padding: 40px 0 0;
-}
-#sidebar #searchform #s {
-  width: 220px;
-  height: 22px;
-  padding: 3px 0 3px 30px;
-  border: none;
-  color: #404040;
-  font: 1.2em "Lucida Grande", Verdana, Arial, sans-serif;
-  background: #fff url(images/bg_search_full.png) no-repeat;
-}
-#sidebar #searchsubmit {
-  padding: 1px;
-}
+/*** HTML Elements ***/
 
-/*** Paragraphs and Fonts ***/
-acronym, abbr {
-  border-bottom: 1px dashed #cacaca;
+/* Paragraphs */
+body {
+  margin:0; padding:0;
+  background: #fff;
+  color: #222;
+  font: 10px/normal "Lucida Grande", Verdana, Arial, sans-serif;
 }
-acronym, abbr, span.caps {
-  font-size: 0.9em;
-  letter-spacing: .07em;
-  cursor: help;
-}
-h1, h2, h3 {
-  margin: 30px 0 14px;
-  color: #666; /* color for post titles is in links section */
-  text-decoration: none;
-  font: normal 2.0em Georgia, "Times New Roman", Times, serif;
-/*  
-  font-family: "Century Gothic", "Avant Garde", Verdana, Helvetica, Arial, sans-serif; 
-*/  
-}
-#footer h1 {
-  margin: 0;
-  display: inline;
-  font: normal 1em "Lucida Grande", Verdana, Arial, sans-serif;
-}
-h3, .entry h2 {
-  font: normal 1.6em Georgia, "Times New Roman", Times, serif;
-}
-h4 {
-  margin: 0;
-  display: inline;
-  font-size: 1em;
-  font-weight: normal;
-  /* used in footer on non-single pages */
-}
-h6 {
-  margin: 9px 0 14px;
-  font: normal 0.9em "Lucida Grande", Verdana, Arial, sans-serif;
-  /* little sub-heading line, to be used on pages in place of a post's date line */
-}
-p.postdate {
-  margin: 0 0 14px 0;
-  font: 1.1em "Lucida Grande", Verdana, Arial, sans-serif;
-  color: #606060;
-}
-.entry p {
+p {
   margin: 0 0 10px 0;
 }
-.bookmarks {
-  margin: 40px 0 0 0;
-  padding: 4px 0;
-  font: 1.2em Arial, Helvetica, sans-serif;
-  text-align: center;
-  /* social bookmarking */
+h1, h2, h3, h4, h5, h6 {
+  /* This color is for headings that are NOT post titles. Post titles are colored as links. */
+  color: #666;
+  font-weight: normal;
+  line-height: normal;
 }
-.bookmarks a {
-  border: none;
-  /* social bookmarking */
+h1, h2, h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 30px 0 15px;
 }
-.postmetadata  {
-  margin: 40px 0 30px;
-  padding: 10px 10px 12px;
-  font: 1.1em/1.4 Arial, Helvetica, sans-serif;
-  text-align: center;
+h4, h5, h6 {
+  font-family: "Lucida Grande", Arial, sans-serif;
+  margin: 20px 0 10px;
 }
-small {
-  font: 1.0em/1.4 Arial, Helvetica, sans-serif;
+/* These are relative to the font size of the section */
+h1 { font-size: 3.00em; }
+h2 { font-size: 2.50em; }
+h3 { font-size: 2.00em; }
+h4 { font-size: 1.50em; }
+h5 { font-size: 1.25em; }
+h6 { font-size: 1.00em; }
+
+acronym, abbr {
+  border-bottom: 1px dotted #ccc;
+  cursor: help;
+  font-size: 0.9em; /* We want it a little smaller than whatever's around it. */
 }
-.alt {
-  border-top: 1px solid #cacaca;
-  border-bottom: 1px solid #cacaca;
-}
-.entry blockquote {
-  margin: 15px 40px 15px 20px;
-  padding: 0 0 0 20px;
-  border-left: 1px dashed #ff0000;
+blockquote {
+  margin: 20px;
+  padding: 0 20px;
+  border-left: 1px dotted #f00;
   text-align: justify;
 }
-.entry blockquote p {
-  line-height: 1.4em;
-}
-blockquote cite {
-  margin: 4px 0 0 0;
+blockquote cite.block {
   display: block;
-}
-pre {
-  width: 95%;
-  margin: 1em 0;
-  padding: 1em 3em 1em 1em;
-  font: 1.1em "Courier New", Courier, monospace;
-  overflow: scroll;
-  border: 1px solid #cacaca;
+  margin-top: 5px;
 }
 code {
   color: #668800;
-  font: 110% "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
+pre {
+  margin: 10px 0;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+small {
+  font-size: 0.5em; /* Half the size of whatever's around it */
+}
+
+/* Lists and Selects */
+input, select {
+  margin: 5px 0;
+}
+optgroup {
+  font: bold italic 12px Georgia, "Times New Roman", Times, serif;
+  margin: 5px 0;
+}
+dt {
+  font-style: italic;
+}
+dd {
+  color: #666;
+  line-height: 13px;
+  margin-bottom: 5px;
+}
+ol {
+  list-style: decimal inside;
+}
+ul {
+  list-style: circle inside;
+}
+
+/*** Header ***/
+#header {
+  width: 260px;
+  text-align: right;
+  font: 40px Georgia, "Times New Roman", Times, serif;
+}
+#header p.blogtitle a {
+  color: #aaa;
+}
+#header p.description {
+  color: #d00;
+}
+
+/*** Content ***/
+#content {
+  font: 13px/20px "Lucida Grande", Verdana, Arial, sans-serif;
+}
+.pagetitle {
+  margin:0; padding:0;
+}
+p.postdate {
+  margin: 14px 0;
+  font: 11px/16px Arial, Helvetica, sans-serif;
+  color: #666;
+}
+.entry blockquote, .entry blockquote p {
+  color: #555;
+  line-height: 18px;
+}
+.entry blockquote cite {
+  color: #888;
+}
+.entry pre {
+  line-height: 18px;
+}
+.postmetadata  {
+  margin: 40px 0 30px 0;
+  padding: 10px;
+  font: 11px/16px Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.nocomments {
+  margin: 0 0 20px 0;
+  text-align: center;
+  padding: 0;
+}
+.navigation {
+  padding: 10px 0 60px;
+  line-height: 16px;
+}
+/* I don't know what this is */
+.bookmarks {
+  /* social bookmarking */
+  margin: 40px 0 0 0;
+  padding: 4px 0;
+  font-size: 12px;
+  text-align: center;
+}
+.post {}
+.multipost {}
+
+/*** Comments ***/
 #commentform p {
   margin: 5px 0;
   font-family: "Lucida Grande", Verdana, Arial, sans-serif;
 }
-.isolate {
-  margin: 6px auto 12px;
-  padding: 0;
-  text-align: center;
-}
-.recentdate {
-  padding: 0 20px 0 10px;
-}
-#footer p {
-  margin: 0;
-  padding: 4px 0 0;
-}
-
-/*** Comments ***/
 .commentlist {
   padding: 0;
-  border-bottom: 1px solid #cacaca;
+  border-bottom: 1px solid #ccc;
   /* border-bottom styles the end of the list of comments */
   font: 1.1em/1.3 "Lucida Grande", Verdana, Arial, sans-serif;
-  /* keep font the same as .entry p */
+  /* keep font the same as .entry p*/
 }
 .commentlist li {
   margin: 0;
   padding: 10px 18px;;
   list-style: none;
-  border-top: 1px solid #cacaca;
+  border-top: 1px solid #ccc;
 }
 .commentlist li .avatar { 
   float: right;
@@ -313,7 +247,7 @@ code {
   font-weight: bold;
 }
 .commentlist li pre {
-  /* controls text within <code> brackets within comments (pre is added automatically by codeautoescape plugin) */  
+  /* controls text within <code> brackets within comments (pre is added automatically by codeautoescape plugin)*/
   width: 90%;
 }
 .commentlist p {
@@ -339,10 +273,119 @@ code {
   background: #fff url(images/com_bubble_white.png) 0 12px no-repeat;
 }
 .authority {
-  /* li.authority controls behavior of comment if comment author = post author */
+  /* li.authority controls behavior of comment if comment author = post author
   background: #fff url(images/com_bubble_auth_white.png) 0 12px no-repeat;
 }
 .commentnumber {
+}
+
+/*** Sidebar ***/
+#sidebar {
+  text-align: right;
+  list-style-type: none;
+  font: 12px/normal "Lucida Grande", Verdana, Arial, sans-serif;
+  color: #666;
+}
+#sidebar h2 {
+  margin: 0 0 5px 0;
+  padding: 2px 0;
+  border-bottom: 1px solid #ccc;
+
+  font: 12px/normal "Lucida Grande", Verdana, Arial, sans-serif;
+  text-align: right;
+  text-transform: uppercase;
+}
+#sidebar > li {
+  margin-bottom: 30px
+}
+#sidebar > li li {
+  padding: 5px 0 0 0;
+}
+#sidebar ul {
+  list-style-type: none;
+}
+#sidebar ol {
+  list-style: decimal outside;
+}
+#sidebar a {
+  color: #666;
+  text-decoration: none;
+}
+#sidebar a:hover {
+  color: #d00;
+  text-decoration: none;
+}
+#sidebar #rss-3 img {
+  margin:0; padding:0;
+}
+li.tagcloudtags, #tag_cloud-3 {
+  line-height: 20px;
+}
+#sidebar #searchform #s {
+  border: 1px dashed #ccc;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+
+  padding: 3px 5px;
+  margin: 0;
+  width: 210px;
+  font: 12px "Lucida Grande", Verdana, Arial, sans-serif;
+}
+#sidebar #searchsubmit {
+  padding: 1px;
+}
+
+/*** Calendar ***/
+#wp-calendar {
+  margin: 10px 0 0 auto;
+  empty-cells: show;
+}
+#wp-calendar a {
+  display: block;
+  text-decoration: underline;
+}
+#wp-calendar #next, #wp-calendar #prev {
+  font: bold 9pt Georgia, "Times New Roman", Times, serif;
+  margin: 5px 0;
+}
+#wp-calendar #next a {
+  text-align: right;
+}
+#wp-calendar #prev a {
+  text-align: left;
+}
+#wp-calendar caption {
+  font: bold 15px Georgia, "Times New Roman", Times, serif;
+  margin: 10px 0;
+  text-align: right;
+}
+#wp-calendar th {
+  font: bold 12px Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  text-transform: capitalize;
+}
+#wp-calendar td {
+  width: 20px;
+  padding: 2px 0;
+}
+
+/*** Footer ***/
+#footer {
+  width: 800px;
+  margin: 0 auto 0;
+  padding: 20px 0 25px 9px;
+  clear: both;
+}
+#footer h1 {
+  margin: 0;
+  display: inline;
+  font: normal 1em "Lucida Grande", Verdana, Arial, sans-serif;
+}
+#footer p {
+  margin: 0;
+  padding: 4px 0 0;
 }
 
 /*** Links ***/
@@ -354,31 +397,17 @@ a {
 a:hover {
   text-decoration: underline;
 }
-/*h2 a, h2 a:visited, h3 a, h3 a:visited {
-  margin: 0 0 0 -1px;
-  padding: 0 1px;
-  color: #d00;  /* color for post titles on index, archive, and search pages
-  font-weight: normal;
-  text-decoration: none;
-}*/
 h2 a:hover, h3 a:hover, .blogtitle a:hover {
   color: #aaa;
   text-decoration: none;
 }
-.entry a:hover {
-}
 .postmetadata a, #sidebar a {
-  border: none;
   color: #666;
   text-decoration: none;
 }
 .postmetadata a:hover, #sidebar a:hover {
-  border: none;
   color: #d00;
   text-decoration: none;
-}
-small a {
-  border: none;
 }
 .download {
   background: #fff url(images/down_white.png) 0 50% no-repeat;
@@ -393,53 +422,21 @@ small a {
   color: #fff;
   background: #779900;
 }
-.hidelink, a.hidelink:hover, a img {
+.hidelink, a.hidelink:hover {
   border: none;
-}
-li.tagcloudtags a {
-  letter-spacing: 0;
-  text-transform: none;
 }
 .more-link a {
   /* .more-link added by the_excerpt_reloaded plugin http://guff.szub.net/2005/02/26/the-excerpt-reloaded/ */
   border: none;
-  color: #cacaca;
+  color: #ccc;
 }
 .more-link a:hover {
   border: none;
   color: #404040;
 }
 
-/*** Lists ***/
-.entry ol, .entry ul {
-  margin: 0 0 0 4px;
-  padding: 0 0 8px 0;
-  /* keep the same as .entry p */
-}
-.entry ol {
-  list-style: decimal outside;
-}
-.entry ul {
-  list-style: circle outside;
-}
-.entry ol li, .entry ul li {
-  margin: 0 0 0 1.5em;
-  padding: 2px 0 4px 0;
-}
-.nocomments {
-  margin: 0 0 20px 0;
-  text-align: center;
-  padding: 0;
-}
-.postmetadata ul, .postmetadata li {
-  clear: both;
-  display: inline;
-  list-style-type: none;
-}
-
 /*** Forms ***/
 /* Give forms a class of clearfix to make them contain the floated submit button */
-
 .entry form {
   /* text-align: center; */ 
   /* This is mainly for password protected posts, makes them look better. */
@@ -480,69 +477,51 @@ select {
   float: right;
 }
 
-/*** Calendar ***/
-#wp-calendar {
-  margin: 10px auto 0;
-  width: 140px;
-  empty-cells: show;
+/*** Images and Captions ***/
+img {
+  margin: 10px 0;
+  padding: 0;
+  border: none;
 }
-#wp-calendar a {
-  display: block;
-  text-decoration: underline;
-}
-#wp-calendar #next a {
-  font-size: 9pt;
-  text-align: right;
-}
-#wp-calendar #prev a {
-  font-size: 9pt;
-  text-align: left;
-}
-#wp-calendar caption {
-  width: 100%;
-  font: bold 1.3em "Lucida Grande", Verdana, Arial, sans-serif;
+.wp-caption, .pic, .smallattachment {
+  /* The caption box is automatically sized to be 10px wider than the image (5px on either side); thus only top and bottom padding is necessary */
+  font-size: 11px;
   text-align: center;
-  text-decoration: none;
-}
-#wp-calendar th {
-  font-style: normal;
-  text-transform: capitalize;
-  text-align: center;
-}
-#wp-calendar td {
-  width: 20px;
-  padding: 3px 0;
-  text-align: center;
-}
-#wp-calendar td.pad:hover {
-  background: #FFFFFF;
-}
 
-/*** Captions ***/
-
-.wp-caption {
   border: 1px dashed #ccc;
-  text-align: center;
-  padding-top: 4px;
-  margin: 10px;
   -moz-border-radius: 3px;
   -khtml-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-
-.wp-caption img {
-  margin: 0;
-  padding: 0;
-  border: 0 none;
+.wp-caption {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 0; 
 }
-
-.wp-caption p.wp-caption-text, .wp-caption-dd {
+.pic {
+  margin: 10px auto;
+  padding: 5px 0; 
+}
+.attachment {
+  text-align: center;
+}
+.smallattachment {
+  display: inline-block;
+  margin: 20px;
+  padding: 5px;
+}
+.wp-caption img, .pic img, .smallattachment img {
+  margin:0; padding:0;
+  border: none;
+}
+.wp-caption p.wp-caption-text, .wp-caption-dd, .wp-caption p,
+.pic p, .pic div, .pic span, .pic * {
   font-size: 11px;
   line-height: 17px;
-  padding: 0 4px 5px;
-  margin: 0;
+  margin:0; padding:0;
 }
+/* pic is my easy-to-remember shorthand for when I'm writing posts from scratch. */
 
 /*** .clearfix http://www.positioniseverything.net/easyclearing.html ***/
 .clearfix:after {
@@ -552,9 +531,8 @@ select {
   clear: both;
   visibility: hidden;
 }
-
 .clearfix {display: inline-block;}
 
-/* Hides from IE-mac \*/
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
+/* Hides from IE-mac */
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }

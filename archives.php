@@ -14,7 +14,7 @@ Template Name: Archives
 
 <?php get_search_form(); ?>
 
-<h2>Archives by Month:</h2>
+<h2 class='pagetitle'>Archives by Month:</h2>
 	<ul>
 		<?php wp_get_archives('type=monthly'); ?>
 	</ul>

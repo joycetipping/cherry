@@ -5,7 +5,7 @@
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<div class="post" id="post-<?php the_ID(); ?>">
-			<h1><?php the_title(); ?></h1>
+			<h1 class='pagetitle'><?php the_title(); ?></h1>
 			<p class="postdate"><?php the_modified_time('l, j F Y') ?></p>
 
 			<div class="entry">

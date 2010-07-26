@@ -35,15 +35,13 @@
 			<?php wp_list_pages('sort_column=menu_order&title_li=<h2>Pages</h2>' ); ?>
 			
 			<?php if (function_exists('wp_tag_cloud')) : ?>
-
-			<li><h2>Tag Cloud</h2>
-				<ul>
-					<li class="tagcloudtags">
-						<?php wp_tag_cloud('smallest=8&largest=22'); ?>
-					</li>
-				</ul>
-			</li>
-
+        <li><h2>Tag Cloud</h2>
+          <ul>
+            <li class="tagcloudtags">
+              <?php wp_tag_cloud('smallest=8&largest=22'); ?>
+            </li>
+          </ul>
+        </li>
 			<?php endif; ?>
 
 			<?php /* If this is the frontpage */ if ( is_home() ) { ?>

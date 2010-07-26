@@ -8,10 +8,12 @@
 			<div class="alignleft">&nbsp;</div>
 			<div class="alignright">&nbsp;</div>
 		</div>
-<?php $attachment_link = get_the_attachment_link($post->ID, true, array(450, 800)); // This also populates the iconsize for the next line ?>
-<?php $_post = &get_post($post->ID); $classname = ($_post->iconsize[0] <= 128 ? 'small' : '') . 'attachment'; // This lets us style narrow icons specially ?>
-		<div class="post" id="post-<?php the_ID(); ?>">
-			<h2><a href="<?php echo get_permalink($post->post_parent); ?>" rev="attachment"><?php echo get_the_title($post->post_parent); ?></a> &raquo; <a href="<?php echo get_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+
+    <?php $attachment_link = get_the_attachment_link($post->ID, true, array(450, 800)); // This also populates the iconsize for the next line ?>
+    <?php $_post = &get_post($post->ID); $classname = ($_post->iconsize[0] <= 128 ? 'small' : '') . 'attachment'; // This lets us style narrow icons specially ?>
+
+		<div class="post attachment" id="post-<?php the_ID(); ?>">
+			<h2 class='pagetitle'><a href="<?php echo get_permalink($post->post_parent); ?>" rev="attachment"><?php echo get_the_title($post->post_parent); ?></a> &raquo; <a href="<?php echo get_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 			<div class="entry">
 				<p class="<?php echo $classname; ?>"><?php echo $attachment_link; ?><br /><?php echo basename($post->guid); ?></p>
 
@@ -20,7 +22,6 @@
 				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 
 				<p class="postmetadata alt">
-					<small>
 						This entry was posted
 						<?php /* This is commented, because it requires a little adjusting sometimes.
 							You'll need to download this plugin, and follow the instructions:
@@ -47,8 +48,6 @@
 							Both comments and pings are currently closed.
 
 						<?php } edit_post_link('Edit this entry.','',''); ?>
-
-					</small>
 				</p>
 
 			</div>
