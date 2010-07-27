@@ -17,10 +17,9 @@
         <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
       </div>
       
-        <p class="postmetadata alt">
-          <?php if (function_exists('the_tags')) the_tags('Tags: ', ', ', ''); ?>
-        </p>
-        <p class="postmetadata alt">
+        <div class="postmetadata alt">
+          <p><?php if (function_exists('the_tags')) the_tags('Tags: ', ', ', ''); ?></p>
+          <p>
             The entry '<a href="<?php echo get_permalink(); ?>" rel="bookmark" title="Permanent Link: <?php the_title_attribute(); ?>"><?php the_title(); ?></a>' was posted
             <?php /* This is commented, because it requires a little adjusting sometimes.
               You'll need to download this plugin, and follow the instructions:
@@ -49,8 +48,8 @@
               Both comments and pings are currently closed.
 
             <?php } edit_post_link('Edit this entry','','.'); ?>
-
-        </p>
+          </p>
+        </div>
 
     </div>
 

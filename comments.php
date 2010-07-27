@@ -5,69 +5,70 @@
  */
 
 // Do not delete these lines
-	if ('comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
-		die ('Please do not load this page directly. Thanks!');
+  if ('comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
+    die ('Please do not load this page directly. Thanks!');
 
         if (!empty($post->post_password)) { // if there's a password
             if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) {  // and it doesn't match the cookie
-				?>
-				
-				<p class="nocomments">This post is password protected. Enter the password to view comments.<p>
-				
-				<?php
-				return;
+        ?>
+        
+        <p class="nocomments">This post is password protected. Enter the password to view comments.<p>
+        
+        <?php
+        return;
             }
         }
 
-		/* This variable is for alternating comment background */
-		$oddcomment = 'comment';
-		/* This variable is for incrementing comment numbers */
-		$comment_number = 1;
+    /* This variable is for alternating comment background */
+    $oddcomment = 'comment';
+    /* This variable is for incrementing comment numbers */
+    $comment_number = 1;
 ?>
 
 <?php if ($comments) : ?>
-	<h3 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3> 
+  <h3 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3> 
 
-	<ol class="commentlist">
+  <ol class="commentlist">
 
-	<?php foreach ($comments as $comment) : ?>
+  <?php foreach ($comments as $comment) : ?>
 
-		<li class="<?php echo $oddcomment; ?><?php if (get_comment_author() == get_the_author()) {echo " authority"; } ?>" id="comment-<?php comment_ID() ?>">
-			
-			<?php echo get_avatar( $comment, 32 ); ?>
-						
-			<cite><?php comment_author_link() ?></cite> writes:
-			<?php if ($comment->comment_approved == '0') : ?>
-			<em>(This comment is awaiting moderation.)</em>
-			<?php endif; ?>
-			<br />
+    <li class="<?php echo $oddcomment; ?><?php if (get_comment_author() == get_the_author()) {echo " authority"; } ?>" id="comment-<?php comment_ID() ?>">
+      
+      <?php echo get_avatar( $comment, 32 ); ?>
+            
+<!--  <cite><?php comment_author_link() ?></cite> writes:-->
+      <span class='commentauthor'><?php comment_author_link() ?></span> writes:
+      <?php if ($comment->comment_approved == '0') : ?>
+      <em>(This comment is awaiting moderation.)</em>
+      <?php endif; ?>
+      <br />
 
-			<small class="commentmetadata"><span class="commentnumber">No. <?php echo $comment_number; $comment_number++; ?> &#8212;</span> <a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?> at <?php comment_time() ?></a> <?php edit_comment_link('edit','',''); ?></small>
+      <p class="commentmetadata"><span class="commentnumber">No. <?php echo $comment_number; $comment_number++; ?> &#8212;</span> <a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?> at <?php comment_time() ?></a> <?php edit_comment_link('edit','',''); ?></p>
 
-			<?php comment_text() ?>
+      <?php comment_text() ?>
 
-		</li>
+    </li>
 
-	<?php /* Changes every other comment to a different class */	
-		if ('comment' == $oddcomment) $oddcomment = 'oddcomment';
-		else $oddcomment = 'comment';
-	?>
-	
+  <?php /* Changes every other comment to a different class */  
+    if ('comment' == $oddcomment) $oddcomment = 'oddcomment';
+    else $oddcomment = 'comment';
+  ?>
+  
 
-	<?php endforeach; /* end for each comment */ ?>
+  <?php endforeach; /* end for each comment */ ?>
 
-	</ol>
+  </ol>
 
  <?php else : // this is displayed if there are no comments so far ?>
 
   <?php if ('open' == $post->comment_status) : ?> 
-		<!-- If comments are open, but there are no comments. -->
-		
-	 <?php else : // comments are closed ?>
-		<!-- If comments are closed. -->
-		<p class="nocomments">Comments are closed.</p>
-		
-	<?php endif; ?>
+    <!-- If comments are open, but there are no comments. -->
+    
+   <?php else : // comments are closed ?>
+    <!-- If comments are closed. -->
+    <p class="nocomments">Comments are closed.</p>
+    
+  <?php endif; ?>
 <?php endif; ?>
 
 
@@ -98,9 +99,9 @@
 
 <?php endif; ?>
 
-<!--<p><small><strong>XHTML:</strong> You can use these tags: <?php echo allowed_tags(); ?></small></p>-->
+<p id='taglist'><small><strong>XHTML:</strong> You can use these tags: <?php echo allowed_tags(); ?></small></p>
 
-<p><textarea name="comment" id="comment" cols="100%" rows="5" tabindex="4"></textarea></p>
+<p><textarea name="comment" id="comment" rows="5" tabindex="4"></textarea></p>
 
 <p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
 <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />

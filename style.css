@@ -117,11 +117,12 @@ pre {
   margin: 10px 0;
   padding: 10px;
   font-family: "Courier New", Courier, monospace;
+  color: #000;
   overflow: auto;
   border: 1px solid #ccc;
 }
 small {
-  font-size: 0.5em; /* Half the size of whatever's around it */
+  font-size: 0.8em; /* Half the size of whatever's around it */
 }
 
 /* Lists and Selects */
@@ -167,7 +168,7 @@ ul {
 .pagetitle {
   margin:0; padding:0;
 }
-p.postdate {
+p.postdate, p.commentmetadata {
   margin: 14px 0;
   font: 11px/16px Arial, Helvetica, sans-serif;
   color: #666;
@@ -211,72 +212,53 @@ p.postdate {
 .multipost {}
 
 /*** Comments ***/
-#commentform p {
-  margin: 5px 0;
+#commentform {
   font-family: "Lucida Grande", Verdana, Arial, sans-serif;
 }
+#commentform p {
+  margin: 5px 0;
+}
+#taglist {
+  line-height: 13px;
+  padding: 10px 0;
+}
+#commentform input, #commentform textarea {
+  padding:2px; margin:0;
+}
+#commentform input {
+  font: 13px/18px "Lucida Grande", Verdana, Arial, sans-serif;
+  width: 170px;
+}
+#commentform textarea {
+  font: 13px/18px "Courier New", Courier, monospace;
+  color: #000;
+  width: 530px;
+}
+#commentform #submit {
+  display: block;
+  margin: 0 0 0 auto;
+}
+
 .commentlist {
-  padding: 0;
-  border-bottom: 1px solid #ccc;
-  /* border-bottom styles the end of the list of comments */
-  font: 1.1em/1.3 "Lucida Grande", Verdana, Arial, sans-serif;
-  /* keep font the same as .entry p*/
+  border-bottom: 1px solid #ccc; /* styles the end of the list of comments */
+  font: 13px/20px "Lucida Grande", Verdana, Arial, sans-serif; /* same as #content */
+  list-style-type: none;
 }
 .commentlist li {
   margin: 0;
-  padding: 10px 18px;;
-  list-style: none;
+  padding: 10px 20px;
   border-top: 1px solid #ccc;
 }
 .commentlist li .avatar { 
   float: right;
   border: 1px solid #eee;
   padding: 2px;
-  background: #fff;
 }
-.commentlist a {
+.commentlist .commentauthor {
+  font: bold 13px/normal Georgia, "Times New Roman", Times, serif;
 }
-.commentlist p {
-  margin: 10px 5px 10px 0;
-}
-.commentmetadata {
-  margin: 0;
-  display: block;
-}
-.commentlist cite {
-  font-weight: bold;
-}
-.commentlist li pre {
-  /* controls text within <code> brackets within comments (pre is added automatically by codeautoescape plugin)*/
-  width: 90%;
-}
-.commentlist p {
-  font-weight: normal;
-  line-height: 1.5em;
-  text-transform: none;
-}
-.commentlist cite a {
-  border: none;
-  text-decoration: none;
-}
-.commentlist cite a:hover {
-  border: none;
-  text-decoration: underline;
-}
-.commentmetadata {
-  font-weight: normal;
-}
-.comment {
-  background: #fff url(images/com_bubble_white.png) 0 12px no-repeat;
-}
-.oddcomment {
-  background: #fff url(images/com_bubble_white.png) 0 12px no-repeat;
-}
-.authority {
-  /* li.authority controls behavior of comment if comment author = post author
-  background: #fff url(images/com_bubble_auth_white.png) 0 12px no-repeat;
-}
-.commentnumber {
+.commentlist li code {
+  line-height: 13px;
 }
 
 /*** Sidebar ***/
@@ -374,7 +356,7 @@ li.tagcloudtags, #tag_cloud-3 {
 /*** Footer ***/
 #footer {
   width: 800px;
-  margin: 0 auto 0;
+  margin: 0 auto;
   padding: 20px 0 25px 9px;
   clear: both;
 }
@@ -436,45 +418,27 @@ h2 a:hover, h3 a:hover, .blogtitle a:hover {
 }
 
 /*** Forms ***/
-/* Give forms a class of clearfix to make them contain the floated submit button */
-.entry form {
-  /* text-align: center; */ 
-  /* This is mainly for password protected posts, makes them look better. */
-}
-#commentform {
-}
-select {
-  width: 130px;
-}
-#commentform input, #contact input {
-  width: 170px;
-  margin: 5px 5px 1px 0;
-  padding: 2px;
-}
-#commentform textarea {
-  width: 99%;
-  padding: 2px;
-}
-#commentform #submit {
-  margin: 0;
-  float: right;
-}
-#contact input, #contact textarea {
-  font: 0.9em "Lucida Grande", Verdana, Arial, sans-serif;
+#contact {
+  font-family: "Lucida Grande", Verdana, Arial, sans-serif;
 }
 #contact p {
   margin: 5px 0;
 }
+#contact input, #commentform textarea {
+  padding:2px; margin:0;
+}
+#contact input {
+  font: 13px/18px "Lucida Grande", Verdana, Arial, sans-serif;
+  width: 170px;
+}
 #contact textarea {
-  width: 100%;
-  margin: 6px 0 0 0;
-  padding: 2px;
-  overflow: hidden;
+  font: 13px/18px "Courier New", Courier, monospace;
+  color: #000;
+  width: 530px;
 }
 #contact #submit {
-  width: 100px;
-  margin: 0;
-  float: right;
+  display: block;
+  margin: 0 0 0 auto;
 }
 
 /*** Images and Captions ***/
