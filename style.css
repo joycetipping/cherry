@@ -87,9 +87,9 @@ h4, h5, h6 {
   margin: 20px 0 10px;
 }
 /* These are relative to the font size of the section */
-h1 { font-size: 3.00em; }
-h2 { font-size: 2.50em; }
-h3 { font-size: 2.00em; }
+h1 { font-size: 2.50em; }
+h2 { font-size: 2.00em; }
+h3 { font-size: 1.75em; }
 h4 { font-size: 1.50em; }
 h5 { font-size: 1.25em; }
 h6 { font-size: 1.00em; }
@@ -110,7 +110,7 @@ blockquote cite.block {
   margin-top: 5px;
 }
 code {
-  color: #668800;
+  color: #000;
   font-family: "Courier New", Courier, monospace;
 }
 pre {
@@ -226,7 +226,7 @@ p.postdate, p.commentmetadata {
   padding:2px; margin:0;
 }
 #commentform input {
-  font: 13px/18px "Lucida Grande", Verdana, Arial, sans-serif;
+  font: 12px/18px "Lucida Grande", Verdana, Arial, sans-serif;
   width: 170px;
 }
 #commentform textarea {
@@ -241,12 +241,12 @@ p.postdate, p.commentmetadata {
 
 .commentlist {
   border-bottom: 1px solid #ccc; /* styles the end of the list of comments */
-  font: 13px/20px "Lucida Grande", Verdana, Arial, sans-serif; /* same as #content */
+  font: 13px/18px "Lucida Grande", Verdana, Arial, sans-serif; /* same as #content */
   list-style-type: none;
 }
 .commentlist li {
   margin: 0;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border-top: 1px solid #ccc;
 }
 .commentlist li .avatar { 
@@ -382,6 +382,8 @@ a:hover {
 h2 a:hover, h3 a:hover, .blogtitle a:hover {
   color: #aaa;
   text-decoration: none;
+}
+.more-link {
 }
 .postmetadata a, #sidebar a {
   color: #666;
