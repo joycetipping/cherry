@@ -239,27 +239,40 @@ p.postdate, p.commentmetadata {
   margin: 0 0 0 auto;
 }
 
+h3.comments {
+/*
+  margin-top: 25px;
+*/
+}
 .commentlist {
+/*
   border-bottom: 1px solid #ccc; /* styles the end of the list of comments */
-  font: 13px/18px "Lucida Grande", Verdana, Arial, sans-serif; /* same as #content */
+*/
+  font: 12px/18px "Lucida Grande", Verdana, Arial, sans-serif; /* same as #content */
   list-style-type: none;
 }
 .commentlist li {
   margin: 0;
   padding: 10px 25px;
-  border-top: 1px solid #ccc;
+  border-bottom: 1px dashed #ccc;
+/*
+  border-top: 1px dashed #ccc;
+*/
 }
 .commentlist li .avatar { 
   float: right;
   border: 1px solid #eee;
-  padding: 2px;
+  margin:0; padding:2px;
+}
+.commentbody {
 }
 .commentlist .commentauthor {
   font: bold 13px/normal Georgia, "Times New Roman", Times, serif;
 }
-.commentlist li code {
-  line-height: 13px;
+.commentlist pre {
+  line-height: 16px;
 }
+
 
 /*** Sidebar ***/
 #sidebar {
@@ -490,6 +503,7 @@ img {
 /* pic is my easy-to-remember shorthand for when I'm writing posts from scratch. */
 
 /*** .clearfix http://www.positioniseverything.net/easyclearing.html ***/
+/*
 .clearfix:after {
   content: ".";
   display: block;
@@ -499,6 +513,7 @@ img {
 }
 .clearfix {display: inline-block;}
 
-/* Hides from IE-mac */
+/* Hides from IE-mac
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
+*/

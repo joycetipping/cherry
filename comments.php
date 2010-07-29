@@ -26,24 +26,25 @@
 ?>
 
 <?php if ($comments) : ?>
-  <h3 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3> 
+  <h3><?php comments_number('No Comments', '1 Comment', '% Comments' ); ?></h3> 
 
   <ol class="commentlist">
 
   <?php foreach ($comments as $comment) : ?>
 
     <li class="<?php echo $oddcomment; ?><?php if (get_comment_author() == get_the_author()) {echo " authority"; } ?>" id="comment-<?php comment_ID() ?>">
-      
+
       <?php echo get_avatar( $comment, 32 ); ?>
             
-<!--  <cite><?php comment_author_link() ?></cite> writes:-->
-      <span class='commentauthor'><?php comment_author_link() ?></span> writes:
-      <?php if ($comment->comment_approved == '0') : ?>
-      <em>(This comment is awaiting moderation.)</em>
-      <?php endif; ?>
-      <br />
+      <p>
+        <span class='commentauthor'><?php comment_author_link() ?></span> writes:
+        <?php if ($comment->comment_approved == '0') : ?><em>(This comment is awaiting moderation.)</em><?php endif; ?>
+      </p>
 
-      <p class="commentmetadata"><span class="commentnumber">No. <?php echo $comment_number; $comment_number++; ?> &#8212;</span> <a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?> at <?php comment_time() ?></a> <?php edit_comment_link('edit','',''); ?></p>
+      <p class="commentmetadata">
+          <span class="commentnumber">No. <?php echo $comment_number; $comment_number++; ?> &#8212;</span>
+          <a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?> at <?php comment_time() ?></a> <?php edit_comment_link('edit','',''); ?>
+      </p>
 
       <?php comment_text() ?>
 
@@ -51,7 +52,7 @@
 
   <?php /* Changes every other comment to a different class */  
     if ('comment' == $oddcomment) $oddcomment = 'oddcomment';
-    else $oddcomment = 'comment';
+    else $oddcomment = 'evencomment';
   ?>
   
 
