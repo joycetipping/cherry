@@ -66,7 +66,6 @@ Tags: fixed-width, left-sidebar, two-columns, black, red, white, light
 body {
   margin:0; padding:0;
   background: #fff;
-  color: #222;
   font: 10px/normal "Lucida Grande", Verdana, Arial, sans-serif;
 }
 p {
@@ -122,15 +121,34 @@ pre {
   border: 1px solid #ccc;
 }
 small {
-  font-size: 0.8em; /* Half the size of whatever's around it */
+  font-size: 0.8em; /* 80% the size of whatever's around it */
 }
+
+/* Links */
+a {
+  margin:0; padding:0;
+  color: #d00;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1 a:hover, h2 a:hover, h3 a:hover {
+  color: #aaa;
+  text-decoration: none;
+}
+.download {
+  background: #fff url(images/down_white.png) 0 50% no-repeat;
+  padding: 0 0 0 18px;
+}
+
 
 /* Lists and Selects */
 input, select {
   margin: 5px 0;
 }
 optgroup {
-  font: bold italic 12px Georgia, "Times New Roman", Times, serif;
+  font: bold italic 12px/normal Georgia, "Times New Roman", Times, serif;
   margin: 5px 0;
 }
 dt {
@@ -152,44 +170,62 @@ ul {
 #header {
   width: 260px;
   text-align: right;
-  font: 40px Georgia, "Times New Roman", Times, serif;
+  font: 16px/normal Georgia, "Times New Roman", Times, serif;
 }
-#header p.blogtitle a {
+#header h1 {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+#header h1 a:hover {
+  text-decoration: underline;
+}
+#header h1#sitetitle a {
   color: #aaa;
 }
-#header p.description {
+#header h1#blogtitle a {
   color: #d00;
 }
 
 /*** Content ***/
 #content {
   font: 13px/20px "Lucida Grande", Verdana, Arial, sans-serif;
+  color: #000;
 }
 .pagetitle {
   margin:0; padding:0;
 }
-p.postdate, p.commentmetadata {
-  margin: 14px 0;
-  font: 11px/16px Arial, Helvetica, sans-serif;
-  color: #666;
+
+p.postdate, p.commentmetadata, .postmetadata a {
+  color: #888;
 }
+p.postdate, p.commentmetadata {
+  font: 11px/16px Arial, Helvetica, sans-serif;
+  margin: 14px 0;
+}
+.postmetadata a:hover {
+  color: #d00;
+  text-decoration: none;
+}
+.postmetadata  {
+  margin: 30px 0;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+
+  font: 11px/16px Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
 .entry blockquote, .entry blockquote p {
-  color: #555;
+  color: #333;
   line-height: 18px;
 }
 .entry blockquote cite {
   color: #888;
 }
+
 .entry pre {
   line-height: 18px;
-}
-.postmetadata  {
-  margin: 40px 0 30px 0;
-  padding: 10px;
-  font: 11px/16px Arial, Helvetica, sans-serif;
-  text-align: center;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
 }
 .nocomments {
   margin: 0 0 20px 0;
@@ -200,16 +236,6 @@ p.postdate, p.commentmetadata {
   padding: 10px 0 60px;
   line-height: 16px;
 }
-/* I don't know what this is */
-.bookmarks {
-  /* social bookmarking */
-  margin: 40px 0 0 0;
-  padding: 4px 0;
-  font-size: 12px;
-  text-align: center;
-}
-.post {}
-.multipost {}
 
 /*** Comments ***/
 #commentform {
@@ -239,15 +265,7 @@ p.postdate, p.commentmetadata {
   margin: 0 0 0 auto;
 }
 
-h3.comments {
-/*
-  margin-top: 25px;
-*/
-}
 .commentlist {
-/*
-  border-bottom: 1px solid #ccc; /* styles the end of the list of comments */
-*/
   font: 12px/18px "Lucida Grande", Verdana, Arial, sans-serif; /* same as #content */
   list-style-type: none;
 }
@@ -255,16 +273,11 @@ h3.comments {
   margin: 0;
   padding: 10px 25px;
   border-bottom: 1px dashed #ccc;
-/*
-  border-top: 1px dashed #ccc;
-*/
 }
 .commentlist li .avatar { 
   float: right;
   border: 1px solid #eee;
   margin:0; padding:2px;
-}
-.commentbody {
 }
 .commentlist .commentauthor {
   font: bold 13px/normal Georgia, "Times New Roman", Times, serif;
@@ -275,11 +288,13 @@ h3.comments {
 
 
 /*** Sidebar ***/
+#sidebar, #sidebar h2, #sidebar a {
+  color: #888;
+}
 #sidebar {
   text-align: right;
   list-style-type: none;
   font: 12px/normal "Lucida Grande", Verdana, Arial, sans-serif;
-  color: #666;
 }
 #sidebar h2 {
   margin: 0 0 5px 0;
@@ -303,7 +318,6 @@ h3.comments {
   list-style: decimal outside;
 }
 #sidebar a {
-  color: #666;
   text-decoration: none;
 }
 #sidebar a:hover {
@@ -326,7 +340,7 @@ li.tagcloudtags, #tag_cloud-3 {
   padding: 3px 5px;
   margin: 0;
   width: 210px;
-  font: 12px "Lucida Grande", Verdana, Arial, sans-serif;
+  font: 12px/normal "Lucida Grande", Verdana, Arial, sans-serif;
 }
 #sidebar #searchsubmit {
   padding: 1px;
@@ -339,10 +353,9 @@ li.tagcloudtags, #tag_cloud-3 {
 }
 #wp-calendar a {
   display: block;
-  text-decoration: underline;
 }
 #wp-calendar #next, #wp-calendar #prev {
-  font: bold 9pt Georgia, "Times New Roman", Times, serif;
+  font: bold 12px/normal Georgia, "Times New Roman", Times, serif;
   margin: 5px 0;
 }
 #wp-calendar #next a {
@@ -352,13 +365,12 @@ li.tagcloudtags, #tag_cloud-3 {
   text-align: left;
 }
 #wp-calendar caption {
-  font: bold 15px Georgia, "Times New Roman", Times, serif;
+  font: bold 15px/normal Georgia, "Times New Roman", Times, serif;
   margin: 10px 0;
   text-align: right;
 }
 #wp-calendar th {
-  font: bold 12px Georgia, "Times New Roman", Times, serif;
-  font-style: normal;
+  font: bold 12px/normal Georgia, "Times New Roman", Times, serif;
   text-transform: capitalize;
 }
 #wp-calendar td {
@@ -369,67 +381,9 @@ li.tagcloudtags, #tag_cloud-3 {
 /*** Footer ***/
 #footer {
   width: 800px;
-  margin: 0 auto;
-  padding: 20px 0 25px 9px;
   clear: both;
-}
-#footer h1 {
-  margin: 0;
-  display: inline;
-  font: normal 1em "Lucida Grande", Verdana, Arial, sans-serif;
-}
-#footer p {
-  margin: 0;
-  padding: 4px 0 0;
-}
-
-/*** Links ***/
-a {
-  margin:0; padding:0;
-  color: #d00;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-h2 a:hover, h3 a:hover, .blogtitle a:hover {
-  color: #aaa;
-  text-decoration: none;
-}
-.more-link {
-}
-.postmetadata a, #sidebar a {
-  color: #666;
-  text-decoration: none;
-}
-.postmetadata a:hover, #sidebar a:hover {
-  color: #d00;
-  text-decoration: none;
-}
-.download {
-  background: #fff url(images/down_white.png) 0 50% no-repeat;
-  padding: 0 0 0 18px;
-}
-.download a {
-  padding: 0 2px;
-  border-bottom: 1px solid #779900;
-}
-.download a:hover {
-  border-bottom: 1px solid #779900;
-  color: #fff;
-  background: #779900;
-}
-.hidelink, a.hidelink:hover {
-  border: none;
-}
-.more-link a {
-  /* .more-link added by the_excerpt_reloaded plugin http://guff.szub.net/2005/02/26/the-excerpt-reloaded/ */
-  border: none;
-  color: #ccc;
-}
-.more-link a:hover {
-  border: none;
-  color: #404040;
+  padding: 50px 0 30px 0;
+  text-align: right;
 }
 
 /*** Forms ***/
@@ -501,19 +455,5 @@ img {
   margin:0; padding:0;
 }
 /* pic is my easy-to-remember shorthand for when I'm writing posts from scratch. */
+/* smallattachment is for attachment pages */
 
-/*** .clearfix http://www.positioniseverything.net/easyclearing.html ***/
-/*
-.clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-.clearfix {display: inline-block;}
-
-/* Hides from IE-mac
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-*/

@@ -33,9 +33,12 @@
 
 <div id="page">
 
-	<div id="header">
-		
-		<p class="blogtitle"><a class="hidelink" href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></p>
-		<p class="description"><?php bloginfo('description'); ?></p>
+  <div id="header">
 
-	</div>
+    <h1 id="sitetitle"><a id="homelink" title='joycetipping.com Homepage' href="http://joycetipping.com">joycetipping</a></h1>
+    <h1 id="blogtitle"><a id="bloglink" title='Blog Homepage' href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+    
+<!--<p class="blogtitle"><a class="hidelink" href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></p>
+    <p class="description"><?php bloginfo('description'); ?></p>-->
+
+  </div>
