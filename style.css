@@ -101,7 +101,7 @@ acronym, abbr {
 blockquote {
   margin: 20px;
   padding: 0 20px;
-  border-left: 1px dotted #f00;
+  border-left: 1px dotted #d00;
   text-align: justify;
 }
 blockquote cite.block {
@@ -195,16 +195,10 @@ ul {
   margin:0; padding:0;
 }
 
-p.postdate, p.commentmetadata, .postmetadata a {
-  color: #888;
-}
 p.postdate, p.commentmetadata {
+  color: #888;
   font: 11px/16px Arial, Helvetica, sans-serif;
   margin: 14px 0;
-}
-.postmetadata a:hover {
-  color: #d00;
-  text-decoration: none;
 }
 .postmetadata  {
   margin: 30px 0;
@@ -214,6 +208,17 @@ p.postdate, p.commentmetadata {
 
   font: 11px/16px Arial, Helvetica, sans-serif;
   text-align: center;
+}
+.postmetadata a {
+  color: #888;
+}
+.postmetadata a:hover {
+  color: #d00;
+  text-decoration: none;
+}
+
+a.more-link {
+  color: #060;
 }
 
 .entry blockquote, .entry blockquote p {
@@ -312,7 +317,9 @@ p.postdate, p.commentmetadata {
   padding: 5px 0 0 0;
 }
 #sidebar ul {
-  list-style-type: none;
+  list-style-type: none;{
+  list-style: decimal outside;
+}
 }
 #sidebar ol {
   list-style: decimal outside;
@@ -331,7 +338,7 @@ li.tagcloudtags, #tag_cloud-3 {
   line-height: 20px;
 }
 #sidebar #searchform #s {
-  border: 1px dashed #ccc;
+  border: 1px dashed #191;
   -moz-border-radius: 3px;
   -khtml-border-radius: 3px;
   -webkit-border-radius: 3px;

@@ -4,8 +4,7 @@
  * @subpackage Apricot
  */
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head profile="http://gmpg.org/xfn/11">
@@ -23,6 +22,7 @@
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.png" />
 
 <?php wp_head(); ?>
 
@@ -38,7 +38,4 @@
     <h1 id="sitetitle"><a id="homelink" title='joycetipping.com Homepage' href="http://joycetipping.com">joycetipping</a></h1>
     <h1 id="blogtitle"><a id="bloglink" title='Blog Homepage' href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
     
-<!--<p class="blogtitle"><a class="hidelink" href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></p>
-    <p class="description"><?php bloginfo('description'); ?></p>-->
-
   </div>
