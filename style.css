@@ -306,14 +306,13 @@ p.postdate, p.commentmetadata {
   text-transform: uppercase;
 }
 #sidebar > li {
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 #sidebar > li li {
   padding: 5px 0 0 0;
 }
 #sidebar ul {
-  list-style-type: none;{
-  list-style: decimal outside;
+  list-style-type: none;
 }
 #sidebar ol {
   list-style: decimal outside;
