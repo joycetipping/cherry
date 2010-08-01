@@ -4,10 +4,12 @@
 
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+  <!--
 		<div class="navigation">
 			<div class="alignleft">&nbsp;</div>
 			<div class="alignright">&nbsp;</div>
 		</div>
+  -->
 
     <?php $attachment_link = get_the_attachment_link($post->ID, true, array(450, 800)); // This also populates the iconsize for the next line ?>
     <?php $_post = &get_post($post->ID); $classname = ($_post->iconsize[0] <= 128 ? 'small' : '') . 'attachment'; // This lets us style narrow icons specially ?>
