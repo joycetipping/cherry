@@ -1,0 +1,19 @@
+Cherry is the wordpress theme I use on my blog:
+http://joycetipping.com/lifeblog
+
+It is derived from Apricot, by Ardamis.com. I went in intending
+to change a few colors and ended up rewriting the entire
+stylesheet as well as tweaking most of the template files in some
+way or another. So it's difficult for me to say that Cherry is a
+child theme of Apricot. However, there's a big difference between
+tweaking a theme and writing one from scratch, so the bulk of the
+credit, as well as my personal gratitude, goes to the original
+author.
+
+If you like Cherry, you are free to use it. However, I don't
+pretend that it's production ready. There are several places
+where I hardcoded links to parts of my website outside of
+Wordpress. I also have no idea whether my new stylesheet is IE
+compatible.
+
+Cherry is provided under the MIT License.

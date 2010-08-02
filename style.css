@@ -329,7 +329,7 @@ p.postdate, p.commentmetadata {
   color: #c00;
   text-decoration: none;
 }
-#sidebar #rss-3 img {
+#sidebar .widgettitle img {
   margin:0; padding:0;
 }
 li.tagcloudtags, #tag_cloud-3 {
