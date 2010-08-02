@@ -33,6 +33,7 @@ Tags: fixed-width, left-sidebar, two-columns, black, red, white, light
   width: 220px;
 }
 
+
 /*** General Tags ***/
 .aligncenter {
   display: block;
@@ -64,13 +65,14 @@ Tags: fixed-width, left-sidebar, two-columns, black, red, white, light
   display: none;
 }
 
+
 /*** HTML Elements ***/
 
 /* Paragraphs */
 body {
   margin:0; padding:0;
   background: #fff;
-  font: 10px/normal "Lucida Grande", Verdana, Arial, sans-serif;
+  font: 10px/normal Verdana, Arial, sans-serif;
 }
 p {
   margin: 0 0 10px 0;
@@ -82,11 +84,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 h1, h2, h3 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, Garamond, 'Times New Roman', Times, serif;
   margin: 30px 0 15px;
 }
 h4, h5, h6 {
-  font-family: "Lucida Grande", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 20px 0 10px;
 }
 /* These are relative to the font size of the section */
@@ -128,6 +130,7 @@ small {
   font-size: 0.8em; /* 80% the size of whatever's around it */
 }
 
+
 /* Links */
 a {
   margin:0; padding:0;
@@ -152,7 +155,7 @@ input, select {
   margin: 5px 0;
 }
 optgroup {
-  font: bold italic 12px/normal Georgia, "Times New Roman", Times, serif;
+  font: bold italic 12px/normal Georgia, Garamond, "Times New Roman", Times, serif;
   margin: 5px 0;
 }
 dt {
@@ -170,11 +173,12 @@ ul {
   list-style: circle inside;
 }
 
+
 /*** Header ***/
 #header {
   width: 260px;
   text-align: right;
-  font: 16px/normal Georgia, "Times New Roman", Times, serif;
+  font: 16px/normal Georgia, Garamond, "Times New Roman", Times, serif;
 }
 #header h1 {
   margin: 0 0 10px 0;
@@ -190,9 +194,10 @@ ul {
   color: #c00;
 }
 
+
 /*** Content ***/
 #content {
-  font: 13px/20px "Lucida Grande", Verdana, Arial, sans-serif;
+  font: 13px/20px Verdana, Arial, sans-serif;
   color: #000;
 }
 .pagetitle {
@@ -241,9 +246,10 @@ p.postdate, p.commentmetadata {
   line-height: 16px;
 }
 
+
 /*** Comments ***/
 #commentform {
-  font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
 }
 #commentform p {
   margin: 5px 0;
@@ -256,7 +262,7 @@ p.postdate, p.commentmetadata {
   padding:2px; margin:0;
 }
 #commentform input {
-  font: 12px/18px "Lucida Grande", Verdana, Arial, sans-serif;
+  font: 12px/18px Verdana, Arial, sans-serif;
   width: 170px;
 }
 #commentform textarea {
@@ -270,7 +276,7 @@ p.postdate, p.commentmetadata {
 }
 
 .commentlist {
-  font: 12px/18px "Lucida Grande", Verdana, Arial, sans-serif; /* same as #content */
+  font: 12px/18px Verdana, Arial, sans-serif; /* same as #content */
   list-style-type: none;
 }
 .commentlist li {
@@ -284,7 +290,7 @@ p.postdate, p.commentmetadata {
   margin:0; padding:2px;
 }
 .commentlist .commentauthor {
-  font: bold 13px/normal Georgia, "Times New Roman", Times, serif;
+  font: bold 13px/normal Georgia, Garamond, "Times New Roman", Times, serif;
 }
 .commentlist pre {
   line-height: 16px;
@@ -298,14 +304,14 @@ p.postdate, p.commentmetadata {
 #sidebar {
   text-align: right;
   list-style-type: none;
-  font: 12px/normal "Lucida Grande", Verdana, Arial, sans-serif;
+  font: 12px/normal Verdana, Arial, sans-serif;
 }
 #sidebar h2 {
   margin: 0 0 5px 0;
   padding: 2px 0;
   border-bottom: 1px solid #ccc;
 
-  font: 12px/normal "Lucida Grande", Verdana, Arial, sans-serif;
+  font: 12px/normal Verdana, Arial, sans-serif;
   text-align: right;
   text-transform: uppercase;
 }
@@ -345,11 +351,12 @@ li.tagcloudtags, #tag_cloud-3 {
   padding: 3px 5px;
   margin: 0;
   width: 210px;
-  font: 12px/normal "Lucida Grande", Verdana, Arial, sans-serif;
+  font: 12px/normal Verdana, Arial, sans-serif;
 }
 #sidebar #searchsubmit {
   padding: 1px;
 }
+
 
 /*** Calendar ***/
 #wp-calendar {
@@ -360,7 +367,7 @@ li.tagcloudtags, #tag_cloud-3 {
   display: block;
 }
 #wp-calendar #next, #wp-calendar #prev {
-  font: bold 12px/normal Georgia, "Times New Roman", Times, serif;
+  font: bold 12px/normal Georgia, Garamond, "Times New Roman", Times, serif;
   margin: 5px 0;
 }
 #wp-calendar #next a {
@@ -370,18 +377,19 @@ li.tagcloudtags, #tag_cloud-3 {
   text-align: left;
 }
 #wp-calendar caption {
-  font: bold 15px/normal Georgia, "Times New Roman", Times, serif;
+  font: bold 15px/normal Georgia, Garamond, "Times New Roman", Times, serif;
   margin: 10px 0;
   text-align: right;
 }
 #wp-calendar th {
-  font: bold 12px/normal Georgia, "Times New Roman", Times, serif;
+  font: bold 12px/normal Georgia, Garamond, "Times New Roman", Times, serif;
   text-transform: capitalize;
 }
 #wp-calendar td {
   width: 20px;
   padding: 2px 0;
 }
+
 
 /*** Footer ***/
 #footer {
@@ -397,7 +405,7 @@ li.tagcloudtags, #tag_cloud-3 {
 
 /*** Forms ***/
 #contact {
-  font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
 }
 #contact p {
   margin: 5px 0;
@@ -406,7 +414,7 @@ li.tagcloudtags, #tag_cloud-3 {
   padding:2px; margin:0;
 }
 #contact input {
-  font: 13px/18px "Lucida Grande", Verdana, Arial, sans-serif;
+  font: 13px/18px Verdana, Arial, sans-serif;
   width: 170px;
 }
 #contact textarea {
@@ -418,6 +426,7 @@ li.tagcloudtags, #tag_cloud-3 {
   display: block;
   margin: 0 0 0 auto;
 }
+
 
 /*** Images and Captions ***/
 img {
