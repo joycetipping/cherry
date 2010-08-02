@@ -24,7 +24,7 @@
 
   <p>
     Powered by <a href="http://wordpress.org/">WordPress</a> <?php bloginfo('version'); ?> |
-    Cherry is my version of <a href="http://www.ardamis.com/2007/06/03/apricot/">Apricot</a>, an excellent theme by <a href="http://www.ardamis.com/">Ardamis.com</a>.
+    <a href='http://github.com/joycetipping/cherry'>Cherry</a> is my version of <a href="http://www.ardamis.com/2007/06/03/apricot/">Apricot</a>, an excellent theme by <a href="http://www.ardamis.com/">Ardamis.com</a>.
   </p>
   
   <p><a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a> and <a href="<?php bloginfo('comments_rss2_url'); ?>">Comments (RSS)</a>.</p>
