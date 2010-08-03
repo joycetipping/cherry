@@ -306,6 +306,9 @@ p.postdate, p.commentmetadata {
   list-style-type: none;
   font: 12px/normal Verdana, Arial, sans-serif;
 }
+#sidebar p {
+  line-height: 16px;
+}
 #sidebar h2.widgettitle {
   margin: 0 0 5px 0;
   padding: 2px 0;

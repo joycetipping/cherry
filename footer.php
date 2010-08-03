@@ -18,8 +18,10 @@
 
   <p>
     <a href='http://joycetipping.com/'>joycetipping.com</a> is provided under the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license.
+    <!--
     <a href="http://validator.w3.org/check?uri=referer" title="Validate the XHTML of this page.">XHTML</a>, 
     <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate the CSS of this page.">CSS</a>.
+    -->
   </p>
 
   <p>
