@@ -306,7 +306,7 @@ p.postdate, p.commentmetadata {
   list-style-type: none;
   font: 12px/normal Verdana, Arial, sans-serif;
 }
-#sidebar h2 {
+#sidebar h2.widgettitle {
   margin: 0 0 5px 0;
   padding: 2px 0;
   border-bottom: 1px solid #ccc;
@@ -314,6 +314,9 @@ p.postdate, p.commentmetadata {
   font: 12px/normal Verdana, Arial, sans-serif;
   text-align: right;
   text-transform: uppercase;
+}
+#sidebar h2.widgettitle img {
+  margin:0; padding:0;
 }
 #sidebar > li {
   margin-bottom: 30px;
@@ -335,10 +338,7 @@ p.postdate, p.commentmetadata {
   color: #c00;
   text-decoration: none;
 }
-#sidebar .widgettitle img {
-  margin:0; padding:0;
-}
-li.tagcloudtags, #tag_cloud-3 {
+li.tagcloudtags, li.widget_tag_cloud, #tag_cloud-3 {
   line-height: 20px;
 }
 #sidebar #searchform #s {

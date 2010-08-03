@@ -30,12 +30,12 @@
 			
 			</li> <?php }?>
 			
-			<?php wp_list_categories('show_count=1&title_li=<h2>Categories</h2>'); ?>
+			<?php wp_list_categories('show_count=1&title_li=<h2 class="widgettitle">Categories</h2>'); ?>
 
-			<?php wp_list_pages('sort_column=menu_order&title_li=<h2>Pages</h2>' ); ?>
+			<?php wp_list_pages('sort_column=menu_order&title_li=<h2 class="widgettitle">Pages</h2>' ); ?>
 			
 			<?php if (function_exists('wp_tag_cloud')) : ?>
-        <li><h2>Tag Cloud</h2>
+        <li><h2 class='widgettitle'>Tag Cloud</h2>
           <ul>
             <li class="tagcloudtags">
               <?php wp_tag_cloud('smallest=8&largest=22'); ?>
@@ -46,7 +46,7 @@
 
 			<?php /* If this is the frontpage */ if ( is_home() ) { ?>
 			
-			<li><h2>Archives</h2>
+			<li><h2 class='widgettitle'>Archives</h2>
 				<ul>
 				<?php wp_get_archives('type=monthly&limit=6'); ?>
 				</ul>
@@ -54,7 +54,7 @@
 			
 				<?php wp_list_bookmarks('orderby=rand'); ?>
 				
-			<li><h2>Meta</h2>
+			<li><h2 class='widgettitle'>Meta</h2>
 				<ul>
 					<?php wp_register(); ?>
 					<li><?php wp_loginout(); ?></li>
