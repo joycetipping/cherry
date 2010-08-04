@@ -207,7 +207,7 @@ ul {
   color: #000;
 }
 .pagetitle {
-  margin:0; padding:0;
+  margin-top:0; padding-top:0;
 }
 
 p.postdate, p.commentmetadata {
