@@ -64,6 +64,9 @@ Tags: fixed-width, left-sidebar, two-columns, black, red, white, light
 .hidden {
   display: none;
 }
+.smallcaps {
+  font-variant: small-caps;
+}
 
 
 /*** HTML Elements ***/
