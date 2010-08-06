@@ -1,3 +1,5 @@
+/* vim: set foldmethod=marker :*/
+
 /*  
 Theme Name: Cherry
 Theme URI: http://www.ardamis.com/2007/06/03/apricot/
@@ -8,7 +10,7 @@ Author URI: http://www.ardamis.com/
 Tags: fixed-width, left-sidebar, two-columns, black, red, white, light
 */
 
-/*** Structural Layout ***/
+/*** Structural Layout **{{{*/
 * {
   margin:0; padding:0;
 }
@@ -32,9 +34,11 @@ Tags: fixed-width, left-sidebar, two-columns, black, red, white, light
 #sidebar {
   width: 220px;
 }
+/*}}}*/
 
+/*** General Tags **{{{*/
 
-/*** General Tags ***/
+/* Alignment {{{*/
 .aligncenter {
   display: block;
   margin-left: auto;
@@ -55,6 +59,33 @@ Tags: fixed-width, left-sidebar, two-columns, black, red, white, light
 .center {
   text-align: center;
 }
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+/*}}}*/
+
+/* Margin and Padding {{{*/
+.compact {
+  margin:0; padding:0;
+}
+.compact-top {
+  margin-top:0; padding-top:0;
+}
+.compact-bottom {
+  margin-bottom:0; padding-bottom:0;
+}
+.compact-left {
+  margin-left:0; padding-left:0;
+}
+.compact-right {
+  margin-right:0; padding-right:0;
+}
+/*}}}*/
+
+/* Layout {{{*/
 .clear {
   clear: both;
 }
@@ -64,17 +95,31 @@ Tags: fixed-width, left-sidebar, two-columns, black, red, white, light
 .hidden {
   display: none;
 }
-.compact {
-  margin:0; padding:0;
+/*}}}*/
+
+/* Text Style {{{*/
+.gray {
+  color: #666;
+}
+.red {
+  color: #c00;
+}
+.sans-serif {
+  font-family: Arial, sans-serif;
+}
+.serif {
+  font-family: Georgia, Garamond, 'Times New Roman', Times, serif;
 }
 .smallcaps {
   font-variant: small-caps;
 }
+/*}}}*/
 
+/*}}}*/
 
-/*** HTML Elements ***/
+/*** HTML Elements **{{{*/
 
-/* Paragraphs */
+/* Paragraphs {{{*/
 body {
   margin:0; padding:0;
   background: #fff;
@@ -91,11 +136,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1, h2, h3 {
   font-family: Georgia, Garamond, 'Times New Roman', Times, serif;
-  margin: 30px 0 15px;
+  margin: 30px 0 15px 0;
 }
 h4, h5, h6 {
   font-family: Arial, sans-serif;
-  margin: 20px 0 10px;
+  margin: 20px 0 10px 0;
 }
 /* These are relative to the font size of the section */
 h1 { font-size: 2.50em; }
@@ -135,9 +180,9 @@ pre {
 small {
   font-size: 0.8em; /* 80% the size of whatever's around it */
 }
+/*}}}*/
 
-
-/* Links */
+/* Links {{{*/
 a {
   margin:0; padding:0;
   color: #c00;
@@ -154,9 +199,9 @@ h1 a:hover, h2 a:hover, h3 a:hover {
   background: #fff url(images/down_white.png) 0 50% no-repeat;
   padding: 0 0 0 18px;
 }
+/*}}}*/
 
-
-/* Lists and Selects */
+/* Lists and Selects {{{*/
 input, select {
   margin: 5px 0;
 }
@@ -178,9 +223,11 @@ ol {
 ul {
   list-style: circle inside;
 }
+/*}}}*/
 
+/*}}}*/
 
-/*** Header ***/
+/*** Header **{{{*/
 #header {
   width: 260px;
   text-align: right;
@@ -199,9 +246,9 @@ ul {
 #header h1#blogtitle a {
   color: #c00;
 }
+/*}}}*/
 
-
-/*** Content ***/
+/*** Content **{{{*/
 #content {
   font: 13px/20px Verdana, Arial, sans-serif;
   color: #000;
@@ -251,9 +298,9 @@ p.postdate, p.commentmetadata {
   padding: 10px 0 60px;
   line-height: 16px;
 }
+/*}}}*/
 
-
-/*** Comments ***/
+/*** Comments **{{{*/
 #commentform {
   font-family: Verdana, Arial, sans-serif;
 }
@@ -301,9 +348,9 @@ p.postdate, p.commentmetadata {
 .commentlist pre {
   line-height: 16px;
 }
+/*}}}*/
 
-
-/*** Sidebar ***/
+/*** Sidebar **{{{*/
 #sidebar, #sidebar h2 {
   color: #000;
 }
@@ -365,9 +412,9 @@ li.tagcloudtags, li.widget_tag_cloud, #tag_cloud-3 {
 #sidebar #searchsubmit {
   padding: 1px;
 }
+/*}}}*/
 
-
-/*** Calendar ***/
+/*** Calendar **{{{*/
 #wp-calendar {
   margin: 10px 0 0 auto;
   empty-cells: show;
@@ -398,9 +445,9 @@ li.tagcloudtags, li.widget_tag_cloud, #tag_cloud-3 {
   width: 20px;
   padding: 2px 0;
 }
+/*}}}*/
 
-
-/*** Footer ***/
+/*** Footer **{{{*/
 #footer {
   width: 800px;
   clear: both;
@@ -410,34 +457,9 @@ li.tagcloudtags, li.widget_tag_cloud, #tag_cloud-3 {
 #footer p {
   margin:0; padding:0;
 }
+/*}}}*/
 
-
-/*** Forms ***/
-#contact {
-  font-family: Verdana, Arial, sans-serif;
-}
-#contact p {
-  margin: 5px 0;
-}
-#contact input, #commentform textarea {
-  padding:2px; margin:0;
-}
-#contact input {
-  font: 13px/18px Verdana, Arial, sans-serif;
-  width: 170px;
-}
-#contact textarea {
-  font: 13px/18px "Courier New", Courier, monospace;
-  color: #000;
-  width: 99%;
-}
-#contact #submit {
-  display: block;
-  margin: 0 0 0 auto;
-}
-
-
-/*** Images and Captions ***/
+/*** Images and Captions **{{{*/
 img {
   margin: 10px 0;
   padding: 0;
@@ -483,4 +505,50 @@ img {
 }
 /* pic is my easy-to-remember shorthand for when I'm writing posts from scratch. */
 /* smallattachment is for attachment pages */
+/*}}}*/
 
+/*** Specialized Pages **{{{*/
+
+/* Contact Form {{{*/
+#contact {
+  font-family: Verdana, Arial, sans-serif;
+}
+#contact p {
+  margin: 5px 0;
+}
+#contact input, #commentform textarea {
+  padding:2px; margin:0;
+}
+#contact input {
+  font: 13px/18px Verdana, Arial, sans-serif;
+  width: 170px;
+}
+#contact textarea {
+  font: 13px/18px "Courier New", Courier, monospace;
+  color: #000;
+  width: 99%;
+}
+#contact #submit {
+  display: block;
+  margin: 0 0 0 auto;
+}
+/*}}}*/
+
+/* Resume {{{*/
+.employer {
+}
+.job-title, .time-employed {
+  font-family: Georgia, Garamond, 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: #666;
+  margin: 0 5px 0 0;
+}
+.job-title:before, .time-employed:before {
+  content: '(';
+}
+.job-title:after, .time-employed:after {
+  content: ')';
+}
+/*}}}*/
+
+/*}}}*/
