@@ -549,14 +549,19 @@ img {
 .job-title:after, .time-employed:after {
   content: ')';
 }
-.resume-section {
+.resume-list-title {
   margin: 20px 0 5px 0;
   padding: 0;
 }
-.resume-subsection {
-  text-indent: 5px;
-  margin:0; padding:0
+.resume-list {
+  font-family: Arial, sans-serif;
+  list-style-type: none;
 }
+.resume-list li {
+  margin:-3px; padding:-1px;
+  text-indent: 5px;
+}
+
 /*}}}*/
 
 /*}}}*/
