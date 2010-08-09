@@ -104,6 +104,9 @@ Tags: fixed-width, left-sidebar, two-columns, black, red, white, light
 .red {
   color: #c00;
 }
+.monospace {
+  font-family: 'Courier New', Courier, monospace;
+}
 .sans-serif {
   font-family: Arial, sans-serif;
 }
