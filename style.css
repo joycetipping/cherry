@@ -22,6 +22,7 @@ MIT License
   width: 850px;
 }
 #header {
+  width: 260px;
   margin: 40px 0 60px 0;
 }
 .narrowcolumn {
@@ -230,23 +231,22 @@ ul {
 
 /*** Header **{{{*/
 #header {
-  width: 260px;
   text-align: right;
-  font: 16px/normal Georgia, Garamond, "Times New Roman", Times, serif;
   text-transform: lowercase;
 }
-#header h1 {
+#site-title, #blog-title, #site-description {
+  font: 40px/normal Georgia, Garamond, 'Times New Roman', Times, serif;
   margin: 0 0 10px 0;
-  padding: 0;
-}
-#header h1 a:hover {
-  text-decoration: underline;
+  padding:0;
 }
 #site-title a {
   color: #000;
 }
 #blog-title a, #site-description a {
   color: #c00;
+}
+#header a:hover {
+  text-decoration: underline;
 }
 /*}}}*/
 

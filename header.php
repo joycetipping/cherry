@@ -35,11 +35,12 @@
 
   <div id="header">
 
-    <h1 id="site-title"><a title='JoyceTipping.com' href="http://joycetipping.com">joycetipping</a></h1>
-    <h1 id="blog-title"><a title="<?php bloginfo('name'); ?>" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+    <!-- This is the custom header for JoyceTipping.com blogs. Replace with generic header below for your blog. -->
+    <h1 id="site-title"><a title='JoyceTipping.com' href="http://joycetipping.com/">joycetipping</a></h1>
+    <h1 id="blog-title"><a title="<?php bloginfo('name'); ?>" href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a></h1>
 
-    <!--
-		<h1 id='site-title'>      <a title="<?php bloginfo('name'); ?>" href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?>       </a></h1>
+    <!-- This is the generic header.
+		<h1 id='site-title'><a title="<?php bloginfo('name'); ?>" href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a></h1>
 		<h1 id="site-description"><a title="<?php bloginfo('name'); ?>" href="<?php bloginfo('url'); ?>/"><?php bloginfo('description'); ?></a></h1>
     -->
     

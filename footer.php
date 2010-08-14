@@ -16,8 +16,9 @@
 <?php } ?>
 -->
 
+  <!-- Custom footer for JoyceTipping.com blogs. Replace with generic footer below for your blog. -->
   <p>
-    <a href='http://joycetipping.com/'>joycetipping.com</a> is provided under the <a href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license.
+    <a href='http://joycetipping.com/'>joycetipping.com</a> is provided under the <a title='License' href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution-ShareAlike</a> license.
     <!--
     <a href="http://validator.w3.org/check?uri=referer" title="Validate the XHTML of this page.">XHTML</a>, 
     <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate the CSS of this page.">CSS</a>.
@@ -26,12 +27,29 @@
 
   <p>
     Powered by <a href="http://wordpress.org/">WordPress</a> <?php bloginfo('version'); ?> |
-    <a href='http://github.com/joycetipping/cherry'>Cherry</a> is my version of <a href="http://www.ardamis.com/2007/06/03/apricot/">Apricot</a>, an excellent theme by <a href="http://www.ardamis.com/">Ardamis.com</a>.
+    <a href='http://github.com/joycetipping/cherry'>Cherry</a> is a custom theme by <a href='http://joycetipping.com/'>Joyce Tipping</a>.
   </p>
   
   <p><a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a> and <a href="<?php bloginfo('comments_rss2_url'); ?>">Comments (RSS)</a>.</p>
-    <!-- <?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds. -->
+  <!-- End custom footer -->
+
+
   
+  <!-- Generic footer.
+  <p>
+    &copy; <?php echo date('Y'); ?> <a href="<?php echo bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a>. All rights reserved.
+    <a href="http://validator.w3.org/check?uri=referer" title="Validate the XHTML of this page.">XHTML</a>, 
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate the CSS of this page.">CSS</a>.
+  </p>
+
+  <p>
+    Powered by <a href="http://wordpress.org/">WordPress</a> <?php bloginfo('version'); ?> |
+    <a href='http://github.com/joycetipping/cherry'>Cherry</a> is a custom theme by <a href='http://joycetipping.com/'>Joyce Tipping</a>.
+  </p>
+  
+  <p><a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a> and <a href="<?php bloginfo('comments_rss2_url'); ?>">Comments (RSS)</a>.</p>
+  -->
+
 </div>
 </div>
 
