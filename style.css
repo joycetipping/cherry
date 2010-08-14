@@ -258,6 +258,7 @@ ul {
 .entry p {
   text-align: justify;
 }
+
 #content h1 { font-size: 30px; }
 #content h2 { font-size: 25px; }
 #content h3 { font-size: 20px; }
@@ -300,10 +301,14 @@ p.postdate, p.commentmetadata {
 .entry blockquote cite {
   color: #666;
 }
-
 .entry pre {
   line-height: 18px;
 }
+.entry ul, .entry ol {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
 .nocomments {
   margin: 0 0 20px 0;
   text-align: center;
