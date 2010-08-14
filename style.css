@@ -256,6 +256,12 @@ ul {
   font: 12px/20px Verdana, Arial, sans-serif;
   color: #000;
 }
+#content h1 { font-size: 30px; }
+#content h2 { font-size: 25px; }
+#content h3 { font-size: 20px; }
+#content h4 { font-size: 18px; }
+#content h5 { font-size: 15px; }
+#content h6 { font-size: 13px; }
 
 p.postdate, p.commentmetadata {
   font: 11px/16px Arial, Helvetica, sans-serif;
@@ -486,11 +492,13 @@ img {
   padding: 5px 0; 
 }
 .attachment {
+/*
   text-align: center;
+*/
 }
 .smallattachment {
   display: inline-block;
-  margin: 20px;
+  margin: 20px 0;
   padding: 5px;
 }
 .wp-caption img, .pic img, .smallattachment img {
