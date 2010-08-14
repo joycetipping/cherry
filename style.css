@@ -255,6 +255,9 @@ ul {
   font: 12px/20px Verdana, Arial, sans-serif;
   color: #000;
 }
+.entry p {
+  text-align: justify;
+}
 #content h1 { font-size: 30px; }
 #content h2 { font-size: 25px; }
 #content h3 { font-size: 20px; }
