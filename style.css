@@ -17,22 +17,22 @@ Tags: fixed-width, left-sidebar, two-columns, black, red, white, light
 #page {
   margin: 0 auto;
   padding: 0;
-  width: 800px;
+  width: 850px;
 }
 #header {
   margin: 40px 0 60px 0;
 }
 .narrowcolumn {
-  width: 540px;
+  width: 600px;
   float: right;
   margin:0; padding:0;
 }
 .widecolumn {
-  width: 540px;
+  width: 600px;
   margin:0; padding:0;
 }
 #sidebar {
-  width: 220px;
+  width: 200px;
 }
 /*}}}*/
 
@@ -105,7 +105,7 @@ Tags: fixed-width, left-sidebar, two-columns, black, red, white, light
   color: #c00;
 }
 .monospace {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Andale Mono', Monaco, Inconsolata, monospace;
 }
 .sans-serif {
   font-family: Arial, sans-serif;
@@ -160,7 +160,7 @@ acronym, abbr {
 }
 blockquote {
   margin: 20px;
-  padding: 0 20px;
+  padding: 0 10px;
   border-left: 1px dotted #c00;
   text-align: justify;
 }
@@ -170,13 +170,13 @@ blockquote cite.block {
 }
 code {
   color: #000;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Andale Mono', Monaco, Inconsolata, monospace;
 }
 pre {
   margin: 10px 0;
   padding: 10px;
-  font-family: "Courier New", Courier, monospace;
-  color: #000;
+  font-family: 'Andale Mono', Monaco, Inconsolata, monospace;
+  color: #222;
   overflow: auto;
   border: 1px solid #ccc;
 }
@@ -253,11 +253,8 @@ ul {
 
 /*** Content **{{{*/
 #content {
-  font: 13px/20px Verdana, Arial, sans-serif;
+  font: 12px/20px Verdana, Arial, sans-serif;
   color: #000;
-}
-.pagetitle {
-  margin-top:0; padding-top:0;
 }
 
 p.postdate, p.commentmetadata {
@@ -322,7 +319,7 @@ p.postdate, p.commentmetadata {
   width: 170px;
 }
 #commentform textarea {
-  font: 13px/18px "Courier New", Courier, monospace;
+  font: 13px/18px 'Andale Mono', Monaco, Inconsolata, monospace;
   color: #000;
   width: 99%;
 }
@@ -409,7 +406,7 @@ li.tagcloudtags, li.widget_tag_cloud, #tag_cloud-3 {
 
   padding: 3px 5px;
   margin: 0;
-  width: 210px;
+  width: 190px;
   font: 12px/normal Verdana, Arial, sans-serif;
 }
 #sidebar #searchsubmit {
@@ -527,7 +524,7 @@ img {
   width: 170px;
 }
 #contact textarea {
-  font: 13px/18px "Courier New", Courier, monospace;
+  font: 13px/18px 'Andale Mono', Monaco, Inconsolata, monospace;
   color: #000;
   width: 99%;
 }

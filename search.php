@@ -4,7 +4,7 @@
 
   <?php if (have_posts()) : ?>
 
-    <h2 class="pagetitle">Search Results</h2>
+    <h2 class="compact-top">Search Results</h2>
 
     <div class="navigation">
       <div class="alignleft"><?php previous_posts_link('&laquo; Previous Entries') ?></div>

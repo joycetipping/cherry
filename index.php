@@ -13,7 +13,7 @@ get_header(); ?>
 		<?php while (have_posts()) : the_post(); ?>
 				
 			<div class="post multipost" id="post-<?php the_ID(); ?>">
-				<h2 class='pagetitle'><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent link to '<?php the_title_attribute(); ?>'"><?php the_title(); ?></a></h2>
+				<h2 class='compact-top'><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent link to '<?php the_title_attribute(); ?>'"><?php the_title(); ?></a></h2>
 				<p class="postdate"><?php the_time('l, j F Y') ?> <!-- by <?php the_author() ?> --></p>
 				
 				<div class="entry">

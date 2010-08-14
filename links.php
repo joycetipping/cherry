@@ -8,7 +8,7 @@ Template Name: Links
 
 <div id="content" class="widecolumn">
 
-<h2 class='pagetitle'>Links:</h2>
+<h2 class='compact-top'>Links:</h2>
 <ul>
 <?php get_links_list(); ?>
 </ul>

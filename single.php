@@ -8,7 +8,7 @@
     
     <!-- google_ad_section_start -->
 
-      <h2 class='pagetitle'><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent link to '<?php the_title_attribute(); ?>'"><?php the_title(); ?></a></h2>
+      <h2 class='compact-top'><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent link to '<?php the_title_attribute(); ?>'"><?php the_title(); ?></a></h2>
       <p class="postdate"><?php the_time('l, j F Y') ?> <!-- by <?php the_author() ?> --></p>
 
       <div class="entry">

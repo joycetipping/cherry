@@ -10,7 +10,7 @@ get_header();
 	<div id="content" class="narrowcolumn">
 
     	<div class="post">
-            <h2 class='pagetitle'>404 Error &#8212; Page Not Found</h2>
+            <h2 class='compact-top'>404 Error &#8212; Page Not Found</h2>
     		<div class="entry">
       			<p>The file you are attempting to access does not exist.  Why not try using the links or the search box?</p>
 				
