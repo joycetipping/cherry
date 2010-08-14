@@ -1,13 +1,15 @@
-/* vim: set foldmethod=marker : */
+/* vim: set foldmethod=marker :*/
 
-/*  
+/*
 Theme Name: Cherry
 Theme URI: http://github.com/joycetipping/cherry
-Description: A minimalist, text-based layout with support for widgets and avatars.  Apricot is tested and proven SEO friendly.  All pages validate as XHTML 1.0 Strict.
-Version: 1.2
+Description: A custom theme for JoyceTipping.com blogs
 Author: Joyce Tipping
-Author URI: http://www.ardamis.com/
-Tags: fixed-width, left-sidebar, two-columns, black, red, white, light
+Author URI: http://joycetipping.com
+Version: 1.0
+Tags: fixed-width, two-columns, left-sidebar, black, white, red, light
+
+MIT License
 */
 
 /*** Structural Layout **{{{*/
@@ -231,6 +233,7 @@ ul {
   width: 260px;
   text-align: right;
   font: 16px/normal Georgia, Garamond, "Times New Roman", Times, serif;
+  text-transform: lowercase;
 }
 #header h1 {
   margin: 0 0 10px 0;
@@ -239,10 +242,10 @@ ul {
 #header h1 a:hover {
   text-decoration: underline;
 }
-#header h1#sitetitle a {
+#site-title a {
   color: #000;
 }
-#header h1#blogtitle a {
+#blog-title a, #site-description a {
   color: #c00;
 }
 /*}}}*/

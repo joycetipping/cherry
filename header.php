@@ -35,7 +35,12 @@
 
   <div id="header">
 
-    <h1 id="sitetitle"><a id="homelink" title='JoyceTipping.com' href="http://joycetipping.com">joycetipping</a></h1>
-    <h1 id="blogtitle"><a id="bloglink" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+    <h1 id="site-title"><a id="homelink" title='JoyceTipping.com' href="http://joycetipping.com">joycetipping</a></h1>
+    <h1 id="blog-title"><a id="bloglink" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+
+    <!--
+		<h1 id='site-title'>      <a title="<?php bloginfo('name'); ?>" href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?>       </a></h1>
+		<h1 id="site-description"><a title="<?php bloginfo('name'); ?>" href="<?php bloginfo('url'); ?>/"><?php bloginfo('description'); ?></a></h1>
+    -->
     
   </div>
