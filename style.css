@@ -255,7 +255,7 @@ ul {
   font: 12px/20px Verdana, Arial, sans-serif;
   color: #000;
 }
-.entry p {
+.entry > * {
   text-align: justify;
 }
 
@@ -483,7 +483,13 @@ img {
   padding: 0;
   border: none;
 }
-.wp-caption, .pic, .smallattachment {
+
+/*
+ * "wp-caption" is the class that wordpress generates on its images with captions
+ * "image" is an easy-to-remember shorthand for when I'm coding by hand
+ * "smallattachment" is the class on attachment pages
+ */
+.wp-caption, .image, .smallattachment {
   /* The caption box is automatically sized to be 10px wider than the image (5px on either side); thus only top and bottom padding is necessary */
   font-size: 11px;
   text-align: center;
@@ -499,11 +505,12 @@ img {
   margin-bottom: 10px;
   padding: 5px 0; 
 }
-.pic {
+.image {
   margin: 10px auto;
   padding: 5px 0; 
 }
 .attachment {
+/* This should be uncommented when using the attachment template without the sidebar (widecolumn).
 /*
   text-align: center;
 */
@@ -513,18 +520,16 @@ img {
   margin: 20px 0;
   padding: 5px;
 }
-.wp-caption img, .pic img, .smallattachment img {
+.wp-caption img, .image img, .smallattachment img {
   margin:0; padding:0;
   border: none;
 }
 .wp-caption p.wp-caption-text, .wp-caption-dd, .wp-caption p,
-.pic p, .pic div, .pic span, .pic * {
+.image p, .image div, .image span, .image * {
   font-size: 11px;
   line-height: 17px;
   margin:0; padding:0;
 }
-/* pic is my easy-to-remember shorthand for when I'm writing posts from scratch. */
-/* smallattachment is for attachment pages */
 /*}}}*/
 
 /*** Specialized Pages **{{{*/
