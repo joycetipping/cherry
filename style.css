@@ -588,4 +588,13 @@ img {
 
 /*}}}*/
 
+/* Navigation {{{*/
+.page-navigation {
+  margin: 20px 0;
+}
+.page-navigation span {
+  margin: 0 7px;
+}
+/*}}}*/
+
 /*}}}*/
