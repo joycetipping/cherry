@@ -179,7 +179,7 @@ pre {
   padding: 0 10px;
   font-family: 'Andale Mono', Monaco, Inconsolata, monospace;
   border-left: 1px solid #aaa;
-  overflow: auto;
+  overflow: show;
 }
 small {
   font-size: 0.8em; /* 80% the size of whatever's around it */
