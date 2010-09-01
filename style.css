@@ -595,6 +595,9 @@ img {
 .page-navigation span {
   margin: 0 7px;
 }
+.page-navigation a {
+  font: bold 12px/20px Arial, sans-serif;
+}
 /*}}}*/
 
 /*}}}*/
