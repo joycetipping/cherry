@@ -384,16 +384,27 @@ p.postdate, p.commentmetadata {
   color: #c00;
   text-decoration: underline;
 }
+#sidebar p {
+  line-height: 16px;
+}
+#sidebar ul {
+  list-style-type: none;
+}
+#sidebar ol {
+  list-style: decimal outside;
+}
 
 #sidebar {
   text-align: right;
   list-style-type: none;
   font: 12px/normal Verdana, Arial, sans-serif;
 }
-#sidebar p {
-  line-height: 16px;
+#sidebar > li {
+  /* Sections on the sidebar */
+  margin-bottom: 30px;
 }
 #sidebar h2.widgettitle {
+  /* Titles of sidebar sections */
   margin: 0 0 5px 0;
   padding: 2px 0;
   border-bottom: 1px solid #ccc;
@@ -403,24 +414,20 @@ p.postdate, p.commentmetadata {
   text-transform: uppercase;
 }
 #sidebar h2.widgettitle img {
+  /* Images inside titles, such as rss feed icon */
   margin:0; padding:0;
 }
-#sidebar > li {
-  margin-bottom: 30px;
-}
 #sidebar > li li {
+  /* Items inside sidebar sections */
   padding: 5px 0 0 0;
 }
-#sidebar ul {
-  list-style-type: none;
-}
-#sidebar ol {
-  list-style: decimal outside;
-}
+
 li.tagcloudtags, li.widget_tag_cloud, #tag_cloud-3 {
+  /* Tag cloud */
   line-height: 20px;
 }
 #sidebar #searchform #s {
+  /* Search form */
   border: 1px solid #ccc;
   -moz-border-radius: 3px;
   -khtml-border-radius: 3px;
@@ -433,6 +440,7 @@ li.tagcloudtags, li.widget_tag_cloud, #tag_cloud-3 {
   font: 12px/normal Verdana, Arial, sans-serif;
 }
 #sidebar #searchsubmit {
+  /* Search form submit button */
   padding: 1px;
 }
 /*}}}*/
@@ -479,6 +487,9 @@ li.tagcloudtags, li.widget_tag_cloud, #tag_cloud-3 {
 }
 #footer p {
   margin:0; padding:0;
+}
+#footer a {
+  color: #c00;
 }
 /*}}}*/
 
