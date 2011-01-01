@@ -129,7 +129,7 @@ MIT License
 body {
   margin:0; padding:0;
   background: #fff;
-  font: 10px/normal Verdana, Arial, sans-serif;
+  font: 11px/normal Arial, Verdana, sans-serif;
 }
 p {
   margin: 0 0 13px 0;
@@ -294,7 +294,12 @@ p.postdate, p.commentmetadata {
   text-align: center;
 }
 
-#content h2 a, #content h2 a:hover {
+#content h1 a, #content h1 a:hover,
+#content h2 a, #content h2 a:hover,
+#content h3 a, #content h3 a:hover,
+#content h4 a, #content h4 a:hover,
+#content h5 a, #content h5 a:hover,
+#content h6 a, #content h6 a:hover {
   color: #000;
 }
 #content .entry a {
@@ -397,7 +402,7 @@ p.postdate, p.commentmetadata {
 #sidebar {
   text-align: right;
   list-style-type: none;
-  font: 12px/normal Verdana, Arial, sans-serif;
+  font: 12px/normal Arial, sans-serif;
 }
 #sidebar > li {
   /* Sections on the sidebar */
@@ -409,7 +414,7 @@ p.postdate, p.commentmetadata {
   padding: 2px 0;
   border-bottom: 1px solid #ccc;
 
-  font: 12px/normal Verdana, Arial, sans-serif;
+  font: 12px/normal Arial, sans-serif;
   text-align: right;
   text-transform: uppercase;
 }
@@ -437,7 +442,6 @@ li.tagcloudtags, li.widget_tag_cloud, #tag_cloud-3 {
   padding: 3px 5px;
   margin: 0;
   width: 190px;
-  font: 12px/normal Verdana, Arial, sans-serif;
 }
 #sidebar #searchsubmit {
   /* Search form submit button */
@@ -493,18 +497,11 @@ li.tagcloudtags, li.widget_tag_cloud, #tag_cloud-3 {
 /*}}}*/
 
 /*** Images and Captions **{{{*/
-img {
-  margin: 10px 0;
-  padding: 0;
-  border: none;
-}
-
 /*
  * "wp-caption" is the class that wordpress generates on its images with captions
- * "image" is an easy-to-remember shorthand for when I'm coding by hand
  * "smallattachment" is the class on attachment pages
  */
-.wp-caption, .image, .smallattachment {
+.wp-caption, .smallattachment {
   /* The caption box is automatically sized to be 10px wider than the image (5px on either side); thus only top and bottom padding is necessary */
   font-size: 11px;
   text-align: center;
@@ -520,10 +517,6 @@ img {
   margin-bottom: 10px;
   padding: 5px 0; 
 }
-.image {
-  margin: 10px auto;
-  padding: 5px 0; 
-}
 .attachment {
 /* This should be uncommented when using the attachment template without the sidebar (widecolumn).
 /*
@@ -535,15 +528,32 @@ img {
   margin: 20px 0;
   padding: 5px;
 }
-.wp-caption img, .image img, .smallattachment img {
+.wp-caption img, .smallattachment img {
   margin:0; padding:0;
   border: none;
 }
-.wp-caption p.wp-caption-text, .wp-caption-dd, .wp-caption p,
-.image p, .image div, .image span, .image * {
+.wp-caption p.wp-caption-text, .wp-caption-dd, .wp-caption p, {
   font-size: 11px;
   line-height: 17px;
   margin:0; padding:0;
+}
+
+/* For when I'm coding by hand */
+img {
+  border: none;
+}
+.img {
+  font-size: 11px;
+  text-align: center;
+
+  margin: 20px 0;
+  padding: 5px;
+
+  border: 1px dashed #ccc;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 /*}}}*/
 
