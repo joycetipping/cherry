@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage Apricot
+ * @subpackage Cherry
  */
 
 get_header();
